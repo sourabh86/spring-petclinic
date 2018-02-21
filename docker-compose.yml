@@ -1,7 +1,11 @@
+petclinic:
+  image: sourabh86/petclinic:v3
+  ports:
+    - 8080 
 mysql:
   image: mysql
   ports:
-    - "3306:3306"
+    - "3309:3306"
   environment:
     - MYSQL_ROOT_PASSWORD=root
     - MYSQL_DATABASE=test
